@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ejercicio 5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            
+        var letra = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'];
+        var dni = prompt("Introduce el dni: ","");
+        var dninumero = dni.slice(0,8);
+        var dniletra = dni.slice(8,9);
+        var dniletratoupp = dniletra.toUpperCase();
+        var resto = dninumero % 23;
+        if (dniletratoupp === letra[resto])
+        {
+        alert("true");
+        }
+        else 
+        {
+        alert("false");
+        }
+        </script>
+    </body>
+</html>
