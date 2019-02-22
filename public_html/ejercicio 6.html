@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>x8487308d</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            
+        var letra = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'];
+        var nie = prompt("Introduce el nie: ","");
+        var nieletraI = nie.slice(0,1);
+        var nienumero = nie.slice(1,8);
+        var nieletraF = nie.slice(8,9);
+        var nieletraItoupp = nieletraI.toUpperCase();
+        var nieletraFtoupp = nieletraF.toUpperCase();
+        if (nieletraItoupp === 'X'){
+           nieletraItoupp = 0;
+        }
+        if (nieletraItoupp === 'Y'){
+           nieletraItoupp = 1;
+        }
+        if (nieletraItoupp === 'Z'){
+           nieletraItoupp = 2;
+        }
+        
+        var nienumero2 = (nieletraItoupp+nienumero);
+        var resto = nienumero2 % 23;
+        if (nieletraFtoupp === letra[resto])
+        {
+        alert("true");
+        }
+        else 
+        {
+        alert("false");
+        }
+        </script>
+    </body>
+</html>
