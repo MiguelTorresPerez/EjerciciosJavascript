@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+        var lista = new Array();
+var ct = 0;
+do
+{
+var pregunta = prompt("Introduce un nombre o pulsa cancelar para ver los nombres introducidos","");
+lista[ct] = pregunta;
+ct++;
+if (pregunta === null || pregunta === "")
+{pregunta = null;}
+}
+while(pregunta!== null)
+document.write(lista);
+        </script>
+    </body>
+</html>

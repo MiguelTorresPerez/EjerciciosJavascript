@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ejercicio 7</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <script>
+            var temperatura = ["13","12","14","18","20","19","18","15","15","17","18","19","20","20","21"];
+            var lluvia = ["Si","No","No","No","No","No","No","No","No","No","No","No","No","No","No"];
+            var i = 0;
+            var j = 0;
+            document.write("<h3>Madrid en los próximos 15 dias</h3>");
+            document.write("<h4>Temperaturas</h4>");
+            while(i<temperatura.length){
+            document.write("<p>"+"&nbsp&nbsp&nbsp&nbsp"+temperatura[i]+"&nbsp&nbsp&nbsp"+"ºC</p>");
+            i++;
+            }
+            document.write("<h4>Lluvias</h4>");
+            while(j<lluvia.length){
+            document.write("<p>"+lluvia[j]+"</p>");
+            j++;
+            }
+        </script>
+    </body>
+</html>
