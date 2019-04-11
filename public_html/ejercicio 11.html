@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ejercicio 11</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+.border-button{
+        position: absolute;
+        left: 50%;
+        margin-left: -100px;
+	font-weight: bold;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+	border: 4px solid #E51A1A;
+	color: black;
+}
+.border-button:hover{
+	transition: 0.3s all;
+	border: none;
+	border: 4px solid white;
+	background-color: #E51A1A;
+	color: white;
+}
+.border-button:active{
+	color: #FFB2B2;
+}
+        </style>
+    </head>
+    <body>
+       <form action="/button-type"> <br><br>
+    <button class="border-button" type="button" onclick="mar()">Paisaje de mar</button><br><br><br>
+    <button class="border-button" type="button" onclick="sierra()">Paisaje de sierra</button><br><br><br>
+    <button class="border-button" type="button" onclick="ciudad()">Paisaje de ciudad</button><br><br><br>
+    <button class="border-button" type="button" onclick="pueblo()">Paisaje de pueblo</button><br><br><br>
+       </form>
+ 
+       <script>
+           var audio = new Audio('http://soundbible.com/mp3/Ocean_Waves-Mike_Koenig-980635527.mp3');
+           var audio1 = new Audio('http://soundbible.com/mp3/heavy-rain-daniel_simon.mp3');
+           var audio2 = new Audio('http://soundbible.com/mp3/street-daniel_simon.mp3');
+           var audio3 = new Audio('http://soundbible.com/mp3/birds_after_rain-Mike_Koenig-1034248330.mp3');
+    function mar()
+    {
+        document.body.style.background = "url('https://pics.freeartbackgrounds.com/fullhd/Azure_Blue_Sea_Background-775.jpg') no-repeat fixed center";
+        
+        audio.play();
+        audio1.pause();
+        audio2.pause();
+        audio3.pause();
+    }
+    function sierra()
+    {
+        document.body.style.backgroundImage = "url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/D8qa-2E/forest-trees-woods-trees-plants-nature-background-summertime-aerial-view_sv1ynnuu__F0000.png')";
+        
+        audio1.play();
+        audio.pause();
+        audio2.pause();
+        audio3.pause();
+    }
+    function ciudad()
+    {
+        document.body.style.backgroundImage = "url('http://eskipaper.com/images/city-background-3.jpg')";
+        
+        audio2.play();
+        audio.pause();
+        audio1.pause();
+        audio3.pause();
+    }
+    function pueblo()
+    {
+        document.body.style.backgroundImage = "url('https://images.wallpaperscraft.com/image/trees_nature_grass_buildings_village_hdr_62895_1920x1080.jpg')";
+        
+        audio3.play();
+        audio.pause();
+        audio1.pause();
+        audio2.pause();
+    }
+
+        </script>
+    </body>
+</html>
